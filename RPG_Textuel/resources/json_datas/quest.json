@@ -1,0 +1,18 @@
+{
+    "QuestNPC": [
+        {
+            "Jiek": {
+                "name": "Jiek",
+                "description": "Un jeune homme est assit silencieusement au milieu de la falaise. Il se retourne après nous avoir entendu. Sa jambe est en sang.",
+                "quest": "Gamin, ramène-moi une potion de vie pour que je puisse soigner mes bobo",
+                "choice": {
+                    "option1": "D'accord.",
+                    "option2": "Je suis occupé."
+                },
+                "reward": "Potion de mana",
+                "quest_item": "Potion de vie",
+                "answer": "Merci mon bon, voila le liquide bleu pour te revigorer !!"
+            }
+        }
+    ]
+}

@@ -1,0 +1,730 @@
+{
+    "characters": [
+        {
+            "heros": {
+                "name": "Player",
+                "class": "Heros",
+                "weapon": "Épée",
+                "level": 1,
+                "level_max": 50,
+                "hp": 100,
+                "hp_max": 5000,
+                "mp": 50,
+                "mp_max": 3500,
+                "rp": 0,
+                "rp_max": 100,
+                "attack": 20,
+                "defense": 20,
+                "accuracy": 100,
+                "spd": 103,
+                "exp": 0,
+                "status": null,
+                "sprite": {
+                    "face": [
+                        "Hero_Face_0.png",
+                        "Hero_Face_1.png",
+                        "Hero_Face_2.png",
+                        "Hero_Face_3.png",
+                        "Hero_Face_4.png",
+                        "Hero_Face_5.png",
+                        "Hero_Face_6.png",
+                        "Hero_Face_7.png"
+                    ],
+                    "right": [
+                        "Hero_Right_0.png",
+                        "Hero_Right_1.png",
+                        "Hero_Right_2.png",
+                        "Hero_Right_3.png",
+                        "Hero_Right_4.png",
+                        "Hero_Right_5.png"
+                    ],
+                    "behind": [
+                        "Hero_Behind_0.png",
+                        "Hero_Behind_1.png",
+                        "Hero_Behind_2.png",
+                        "Hero_Behind_3.png",
+                        "Hero_Behind_4.png",
+                        "Hero_Behind_5.png",
+                        "Hero_Behind_6.png",
+                        "Hero_Behind_7.png"
+                    ],
+                    "left": [
+                        "Hero_Left_0.png",
+                        "Hero_Left_1.png",
+                        "Hero_Left_2.png",
+                        "Hero_Left_3.png",
+                        "Hero_Left_4.png",
+                        "Hero_Left_5.png"
+                    ],
+                    "idle": [
+                        "Hero_Right_0.png",
+                        "Hero_Behind_0.png",
+                        "Hero_Face_0.png",
+                        "Hero_Left_0.png"
+                    ]
+                },
+                "image": null,
+                "skills": {
+                    "skill_1": {
+                        "name": "Coup victoire",
+                        "detail": "Effectue une attaque en cône les ennemis en face.",
+                        "image": "image.png",
+                        "mp": 10,
+                        "cd": 0,
+                        "effect": {
+                            "value": 1.15,
+                            "type": "Attaque",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": true,
+                            "element": "Physique",
+                            "se": [
+                                "Hero_Skill_1.ogg"
+                            ]
+                        }
+                    },
+                    "skill_2": {
+                        "name": "Premier Soin",
+                        "detail": "Soigne un allié de 15%.",
+                        "image": "image.png",
+                        "mp": 10,
+                        "cd": 0,
+                        "effect": {
+                            "value": 0.15,
+                            "type": "Soin",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": false,
+                            "element": "Lumière",
+                            "se": [
+                                "Hero_Skill_2.ogg"
+                            ]
+                        }
+                    },
+                    "skill_3": {
+                        "name": "Intimidation",
+                        "detail": "Provoque tous les ennemis qui perdent l'envie de se battre, réduit de 20% l'attaque ennemi et 5% sur les boss.",
+                        "image": "image.png",
+                        "mp": 5,
+                        "cd": 3,
+                        "effect": {
+                            "value": 0.8,
+                            "value_boss": 0.95,
+                            "type": "Offensif",
+                            "is_buff": false,
+                            "is_debuff": true,
+                            "aoe": true,
+                            "element": "null",
+                            "se": [
+                                "Hero_Skill_3.ogg"
+                            ]
+                        }
+                    },
+                    "ultimate": {
+                        "name": "Spes Mundi",
+                        "detail": "Obtient l'aval d'un dieu, le héros s'équipe de l'arme sacrée et assène un coup fulgurant sur l'ennemi, 2,5 fois les dégâts de l'arme.",
+                        "image": "image.png",
+                        "rp": 100,
+                        "effect": {
+                            "value": 2.5,
+                            "type": "Attaque",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe":false,
+                            "element": "Lumière",
+                            "se": [
+                                "Hero_Ultimate.ogg"
+                            ]
+                        }
+                    }
+                },
+                "resistance": {
+                    "fire": 0,
+                    "water": 2,
+                    "thunder": 0,
+                    "earth": 1,
+                    "wind": 2,
+                    "light": 5,
+                    "dark": 0
+                }
+            },
+            "lancer": {
+                "name": "Valentin",
+                "class": "Lancier",
+                "weapon": "Lance",
+                "level": 1,
+                "level_max": 50,
+                "hp": 120,
+                "hp_max": 5000,
+                "mp": 50,
+                "mp_max": 3500,
+                "rp": 0,
+                "rp_max": 100,
+                "attack": 15,
+                "defense": 30,
+                "accuracy": 100,
+                "spd": 101,
+                "exp": 0,
+                "status": null,
+                "sprite": {
+                    "behind": [
+                        "Valentin_Behind_0.png",
+                        "Valentin_Behind_1.png",
+                        "Valentin_Behind_2.png",
+                        "Valentin_Behind_3.png",
+                        "Valentin_Behind_4.png",
+                        "Valentin_Behind_5.png",
+                        "Valentin_Behind_6.png",
+                        "Valentin_Behind_7.png"
+                    ]
+                },
+                "image": null,
+                "skills": {
+                    "skill_1": {
+                        "name": "Coup perçant",
+                        "detail": "Effectue une attaque perçante qui perfore l'armure de l'ennemi, ignore 20% de la défense de l'ennemi et 5% de la défense des boss.",
+                        "image": "image.png",
+                        "mp": 10,
+                        "cd": 0,
+                        "effect": {
+                            "value": 1,
+                            "value_boss": 1,
+                            "type": "Attaque",
+                            "is_buff": false,
+                            "is_debuff": true,
+                            "aoe": false,
+                            "element": "Physique",
+                            "se": [
+                                "Valentin_Skill_1.ogg"
+                            ]
+                        }
+                    },
+                    "skill_2": {
+                        "name": "Tourbillon",
+                        "detail": "Fait tourner sa lance au-dessus de sa tête.",
+                        "image": "image.png",
+                        "mp": 10,
+                        "cd": 0,
+                        "effect": {
+                            "value": 1.1,
+                            "type": "Attaque",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": true,
+                            "element": "Physique",
+                            "se": [
+                                "Valentin_Skill_2.ogg"
+                            ]
+                        }
+                    },
+                    "skill_3": {
+                        "name": "Riposte",
+                        "detail": "Se met en garde pour contrer une attaque.",
+                        "image": "image.png",
+                        "mp": 40,
+                        "cd": 2,
+                        "effect": {
+                            "value": 1,
+                            "value_boss": 0.8,
+                            "type": "Défensif",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": false,
+                            "element": "Physique",
+                            "se": [
+                                "Valentin_Skill_3.ogg"
+                            ]
+                        }
+                    },
+                    "ultimate": {
+                        "name": "Technique ancestrale",
+                        "detail": "Prend appui sur son arme et saute dans les airs pour effectuer un enchaînement de coups tranchants.",
+                        "image": "image.png",
+                        "rp": 100,
+                        "effect": {
+                            "value": 1.5,
+                            "type": "Attaque",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": false,
+                            "element": "Physique",
+                            "se": [
+                                "Valentin_Ultimate.ogg"
+                            ]
+                        }
+                    }
+                },
+                "resistance": {
+                    "fire": 0,
+                    "water": 3,
+                    "thunder": 2,
+                    "earth": 3,
+                    "wind": 3,
+                    "light": 0,
+                    "dark": 0
+                }
+            },
+            "warrior": {
+                "name": "Thari",
+                "class": "Guerrier",
+                "weapon": "Poings",
+                "level": 1,
+                "level_max": 50,
+                "hp": 100,
+                "hp_max": 5000,
+                "mp": 50,
+                "mp_max": 3500,
+                "rp": 0,
+                "rp_max": 100,
+                "attack": 25,
+                "defense": 5,
+                "accuracy": 100,
+                "spd": 110,
+                "exp": 0,
+                "status": null,
+                "sprite": {
+                    "behind": [
+                        "Thari_Behind_0.png",
+                        "Thari_Behind_1.png",
+                        "Thari_Behind_2.png",
+                        "Thari_Behind_3.png",
+                        "Thari_Behind_4.png",
+                        "Thari_Behind_5.png",
+                        "Thari_Behind_6.png",
+                        "Thari_Behind_7.png"
+                    ]
+                },
+                "image": null,
+                "skills": {
+                    "skill_1": {
+                        "name": "Lance-pique",
+                        "detail": "Bébé Nergi lance une rafale de pics, peut toucher 1 à 4 fois.",
+                        "image": "image.png",
+                        "mp": 15,
+                        "cd": 0,
+                        "effect": {
+                            "value": 1.1,
+                            "type": "Attaque",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": false,
+                            "element": "Physique",
+                            "se": [
+                                "Thari_Skill_1.ogg"
+                            ]
+                        }
+                    },
+                    "skill_2": {
+                        "name": "Pique de Nergi",
+                        "detail": "Bébé Nergi s'enveloppe de pics et fonce sur l'ennemi.",
+                        "image": "image.png",
+                        "mp": 35,
+                        "cd": 0,
+                        "effect": {
+                            "value": 1.2,
+                            "type": "Attaque",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": true,
+                            "element": "Physique",
+                            "se": [
+                                "Thari_Skill_2.ogg"
+                            ]
+                        }
+                    },
+                    "skill_3": {
+                        "name": "Charge",
+                        "detail": "Concentre sa force sur ses jambes et saute sur l'ennemi.",
+                        "image": "image.png",
+                        "mp": 40,
+                        "cd": 2,
+                        "effect": {
+                            "value": 1.2,
+                            "type": "Attaque",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": false,
+                            "element": "Physique",
+                            "se": [
+                                "Thari_Skill_3"
+                            ]
+                        }
+                    },
+                    "ultimate": {
+                        "name": "Transformation démoniaque",
+                        "detail": "Invoque ses pouvoirs démoniaques puis donne un coup dévastateur.",
+                        "image": "image.png",
+                        "rp": 70,
+                        "effect": {
+                            "value": 1.35,
+                            "type": "Attaque",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": false,
+                            "element": "Ténèbres",
+                            "se": [
+                                "Thari_Ultimate.ogg"
+                            ]
+                        }
+                    }
+                },
+                "resistance": {
+                    "fire": 2,
+                    "water": 0,
+                    "thunder": 1,
+                    "earth": 1,
+                    "wind": 0,
+                    "light": -10,
+                    "dark": 5
+                }
+            },
+            "priest": {
+                "name": "Kai",
+                "class": "Prêtre",
+                "weapon": "Bâton",
+                "level": 1,
+                "level_max": 50,
+                "hp": 100,
+                "hp_max": 5000,
+                "mp": 80,
+                "mp_max": 3500,
+                "rp": 0,
+                "rp_max": 100,
+                "attack": 5,
+                "defense": 15,
+                "accuracy": 100,
+                "spd": 102,
+                "exp": 0,
+                "status": null,
+                "sprite": {
+                    "behind": [
+                        "Chrisline_Behind_0.png",
+                        "Chrisline_Behind_1.png",
+                        "Chrisline_Behind_2.png",
+                        "Chrisline_Behind_3.png",
+                        "Chrisline_Behind_4.png",
+                        "Chrisline_Behind_5.png",
+                        "Chrisline_Behind_6.png",
+                        "Chrisline_Behind_7.png"
+                    ]
+                },
+                "image": null,
+                "skills": {
+                    "skill_1": {
+                        "name": "Lumière du dragon",
+                        "detail": "Soigne ses alliés de 10%.",
+                        "image": "image.png",
+                        "mp": 15,
+                        "cd": 0,
+                        "effect": {
+                            "value": 1.1,
+                            "value_Thari": 1.03,
+                            "type": "Soin",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": true,
+                            "element": "Lumière",
+                            "se": [
+                                "Chrisline_Skill1.mp3"
+                            ]
+                        }
+                    },
+                    "skill_2": {
+                        "name": "Écaille protectrice",
+                        "detail": "Augmente la defenseense de 10% d'un allié ou de soi-meme.",
+                        "image": "image.png",
+                        "mp": 20,
+                        "cd": 1,
+                        "effect": {
+                            "value": 1.1,
+                            "value_Thari": 1.03,
+                            "type": "Défensif",
+                            "is_buff": true,
+                            "is_debuff": false,
+                            "aoe": false,
+                            "element": "Lumière",
+                            "se": [
+                                "Chrisline_Skill2.mp3"
+                            ]
+                        }
+                    },
+                    "skill_3": {
+                        "name": "Souffle du dragon",
+                        "detail": "Blesse légerement les cibles et réduit la défense de 10% des ennemis et de 5% des boss.",
+                        "image": "image.png",
+                        "mp": 30,
+                        "cd": 2,
+                        "effect": {
+                            "value": 1.1,
+                            "type": "Offensif",
+                            "is_buff": false,
+                            "is_debuff": true,
+                            "aoe": true,
+                            "element": "Lumière",
+                            "se": [
+                                "Chrisline_Skill3.mp3"
+                            ]
+                        }
+                    },
+                    "ultimate": {
+                        "name": "Bénédiction des cieux",
+                        "detail": "Le dieu vous accorde ses pouvoirs et fait revivre un allié mort et tous ses points de vie.",
+                        "image": "image.png",
+                        "rp": 100,
+                        "effect": {
+                            "value": 0,
+                            "type": "Soin",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": false,
+                            "element": "Lumière",
+                            "se": [
+                                "Chrisline_Ultimate.mp3"
+                            ]
+                        }
+                    }
+                },
+                "resistance": {
+                    "fire": 1,
+                    "water": 2,
+                    "thunder": 1,
+                    "earth": 1,
+                    "wind": 2,
+                    "light": 5,
+                    "dark": -5
+                }
+            },
+            "explorer": {
+                "name": "Lorys",
+                "class": "Explorateur",
+                "weapon": "Claymore",
+                "level": 1,
+                "level_max": 50,
+                "hp": 110,
+                "hp_max": 5000,
+                "mp": 60,
+                "mp_max": 3500,
+                "rp": 0,
+                "rp_max": 100,
+                "attack": 15,
+                "defense": 25,
+                "accuracy": 100,
+                "spd": 105,
+                "exp": 0,
+                "status": null,
+                "sprite": {
+                    "behind": [
+                        "Lorys_Behind_0.png",
+                        "Lorys_Behind_1.png",
+                        "Lorys_Behind_2.png",
+                        "Lorys_Behind_3.png",
+                        "Lorys_Behind_4.png",
+                        "Lorys_Behind_5.png",
+                        "Lorys_Behind_6.png",
+                        "Lorys_Behind_7.png"
+                    ]
+                },
+                "image": null,
+                "skills": {
+                    "skill_1": {
+                        "name": "Médaillon",
+                        "detail": "Augmente la vitesse de 10% d'un allié.",
+                        "image": "image.png",
+                        "mp": 15,
+                        "cd": 1,
+                        "effect": {
+                            "value": 1.1,
+                            "value_Thari": 1.05,
+                            "type": "Offensif",
+                            "is_buff": true,
+                            "is_debuff": false,
+                            "aoe": false,
+                            "element": "Lumière",
+                            "se": [
+                                "Lorys_Skill_1.ogg"
+                            ]
+                        }
+                    },
+                    "skill_2": {
+                        "name": "Double lame",
+                        "detail": "S'équipe d'une deuxieme lame temporairement pour effectuer 2 Attaque au lieu d'une, dure 2 tour",
+                        "image": "image.png",
+                        "mp": 20,
+                        "cd": 3,
+                        "effect": {
+                            "value": 1.2,
+                            "type": "Attaque",
+                            "is_buff": true,
+                            "is_debuff": false,
+                            "aoe": false,
+                            "element": "Physique",
+                            "se": [
+                                "Lorys_Skill_2.mp3"
+                            ]
+                        }
+                    },
+                    "skill_3": {
+                        "name": "Oeuf de poule",
+                        "detail": "Augmente l'Attaque d'un allié de 15%.",
+                        "image": "image.png",
+                        "mp": 20,
+                        "cd": 1,
+                        "effect": {
+                            "value": 1.15,
+                            "value_Thari": 1.08,
+                            "type": "Offensif",
+                            "is_buff": true,
+                            "is_debuff": false,
+                            "aoe": false,
+                            "element": "Lumière",
+                            "se": [
+                                "Lorys_Skill_3.mp3"
+                            ]
+                        }
+                    },
+                    "ultimate": {
+                        "name": "Coeur vaillant",
+                        "detail": "Encaisse 50% du prochain dégât reçu et les convertit en points de vie.",
+                        "image": "image.png",
+                        "rp": 100,
+                        "effect": {
+                            "value": 0,
+                            "value_boss": 1.5,
+                            "type": "Soin",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": false,
+                            "element": "Lumière",
+                            "se": [
+                                "Lorys_Ultimate.ogg"
+                            ]
+                        }
+                    }
+                },
+                "resistance": {
+                    "fire": 0,
+                    "water": 2,
+                    "thunder": 0,
+                    "earth": 3,
+                    "wind": 1,
+                    "light": 1,
+                    "dark": 0
+                }
+            },
+            "summoner": {
+                "name": "Rosine",
+                "class": "Invocateur",
+                "weapon": "Chakram",
+                "level": 1,
+                "level_max": 50,
+                "hp": 100,
+                "hp_max": 5000,
+                "mp": 80,
+                "mp_max": 3500,
+                "rp": 0,
+                "rp_max": 100,
+                "attack": 10,
+                "defense": 25,
+                "accuracy": 100,
+                "spd": 104,
+                "exp": 0,
+                "status": null,
+                "sprite": {
+                    "behind": [
+                        "Rosine_Behind_0.png",
+                        "Rosine_Behind_1.png",
+                        "Rosine_Behind_2.png",
+                        "Rosine_Behind_3.png",
+                        "Rosine_Behind_4.png",
+                        "Rosine_Behind_5.png",
+                        "Rosine_Behind_6.png",
+                        "Rosine_Behind_7.png"
+                    ]
+                },
+                "image": null,
+                "skills": {
+                    "skill_1": {
+                        "name": "Dragon d'azur",
+                        "detail": "Invoque un dragon d'azur qui inflige un coup de queue, inflige des dégâts terrestre.",
+                        "image": "image.png",
+                        "mp": 15,
+                        "cd": 0,
+                        "effect": {
+                            "value": 1.7,
+                            "type": "Attaque",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": false,
+                            "element": "terrestre",
+                            "se": [
+                                "Rosine_Skill_1"
+                            ]
+                        }
+                    },
+                    "skill_2": {
+                        "name": "Tortue noire",
+                        "detail": "Invoque une tortue noire qui noye les ennemis dans un torent, inflige des dégâts d'Eau.",
+                        "image": "image.png",
+                        "mp": 20,
+                        "cd": 0,
+                        "effect": {
+                            "value": 1.6,
+                            "type": "Attaque",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": true,
+                            "element": "Eau",
+                            "se": [
+                                "Rosine_Skill_2.ogg"
+                            ]
+                        }
+                    },
+                    "skill_3": {
+                        "name": "Tigre blanc",
+                        "detail": "Invoque un tigre blanc avec des éclairs, inflige des dégâts de foudre. 20% de paralyser les ennemis et 0% pour les boss.",
+                        "image": "image.png",
+                        "mp": 25,
+                        "cd": 0,
+                        "effect": {
+                            "value": 1.6,
+                            "type": "Attaque",
+                            "is_buff": false,
+                            "is_debuff": false,
+                            "aoe": true,
+                            "element": "Foudre",
+                            "se": [
+                                "Rosine_Skill_3.ogg"
+                            ]
+                        }
+                    },
+                    "ultimate": {
+                        "name": "Frères jumeaux",
+                        "detail": "Invoque skoll et hati, deux loups jumEaux.\nskoll enferme les ennemis dans un cercle de feu pendant 5 tours, inflige des dégâts de feu.\nhati réduit la défense et les dégâts des ennemis pendant 5 tours.",
+                        "image": "image.png",
+                        "rp": 100,
+                        "effect": {
+                            "value": 1.8,
+                            "type": "Attaque",
+                            "is_buff": false,
+                            "is_debuff": true,
+                            "aoe": true,
+                            "element": "Feu",
+                            "se": [
+                                "Rosine_Ultimate.ogg"
+                            ]
+                        }
+                    }
+                },
+                "resistance": {
+                    "fire": 2,
+                    "water": 2,
+                    "thunder": 2,
+                    "earth": 2,
+                    "wind": 2,
+                    "light": -1,
+                    "dark": 1
+                }
+            }
+        }
+    ]
+}
